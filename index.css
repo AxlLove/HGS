@@ -1,0 +1,38 @@
+@import url(./vendor/normalize.css);
+
+.body {
+    background-color: rgba(37, 37, 37, 0.856);
+}
+.page {
+  margin: 0 auto;
+  min-width: 720px;
+  max-width: 1280px;
+}
+
+.hgs-grid {
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.hgs-grid__container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(213px, 1fr));
+  gap: 20px 15px;
+
+}
+.hgs-grid__item {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.85;
+}
+.hgs-grid__item:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 10px -7px 10px 0px rgba(226, 233, 238, 0.17);
+  opacity: 1;
+}
